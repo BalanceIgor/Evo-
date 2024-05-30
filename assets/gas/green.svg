@@ -1,0 +1,23 @@
+<svg width="347" height="41" viewBox="0 0 347 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="347" height="41" rx="8" fill="#0F0F0F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 4.79086 4.79086 3 7 3H19C21.2091 3 23 4.79086 23 7V34C23 36.2091 21.2091 38 19 38H7C4.79086 38 3 36.2091 3 34V7ZM26 7C26 4.79086 27.7909 3 30 3H42C44.2091 3 46 4.79086 46 7V34C46 36.2091 44.2091 38 42 38H30C27.7909 38 26 36.2091 26 34V7ZM53 3C50.7909 3 49 4.79086 49 7V34C49 36.2091 50.7909 38 53 38H65C67.2091 38 69 36.2091 69 34V7C69 4.79086 67.2091 3 65 3H53Z" fill="#0F0F0F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 7C3 4.79086 4.79086 3 7 3H19C21.2091 3 23 4.79086 23 7V34C23 36.2091 21.2091 38 19 38H7C4.79086 38 3 36.2091 3 34V7ZM26 7C26 4.79086 27.7909 3 30 3H42C44.2091 3 46 4.79086 46 7V34C46 36.2091 44.2091 38 42 38H30C27.7909 38 26 36.2091 26 34V7ZM53 3C50.7909 3 49 4.79086 49 7V34C49 36.2091 50.7909 38 53 38H65C67.2091 38 69 36.2091 69 34V7C69 4.79086 67.2091 3 65 3H53Z" fill="url(#paint0_linear_1_145)"/>
+<rect x="72" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="94.9158" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="117.832" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="140.747" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="163.663" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="186.579" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="209.495" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="232.41" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="255.326" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="278.242" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="301.157" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<rect x="324.073" y="3" width="19.9267" height="35" rx="4" fill="white" fill-opacity="0.1"/>
+<defs>
+<linearGradient id="paint0_linear_1_145" x1="3" y1="20.5" x2="66.9599" y2="9.07708" gradientUnits="userSpaceOnUse">
+<stop stop-color="#20D691"/>
+<stop offset="1" stop-color="#7AE5B5"/>
+</linearGradient>
+</defs>
+</svg>

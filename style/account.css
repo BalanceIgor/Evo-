@@ -1,0 +1,477 @@
+.dashboard {
+    padding: 30px;
+    width: 100%;
+}
+
+.dashboard-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.account__my-acc {
+    display: flex;
+    gap: 30px;
+}
+
+
+.my-acc__info {
+    background-color: rgba(20, 20, 20, 1);
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 370px;
+}
+
+.my-acc-info__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF1A;
+    padding-bottom: 30px;
+}
+
+.my-acc-info__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.my-acc-info__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-acc-info-left__item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.my-acc-info-left__item span {
+    color: white;
+}
+
+.my-acc-info__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.my-acc-info__right img {
+    width: 70px;
+}
+
+.my-acc-info__btn {
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 36px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.my-acc-right__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80%;
+}
+
+.my-acc-right__item {
+    width: 370px;
+    background-color: rgba(20, 20, 20, 1);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 138px;
+    overflow: hidden;
+}
+
+.my-acc-right__item:nth-child(1)::before {
+    position: absolute;
+    content: "";
+    background: url('../assets/account/01.svg');
+    left: 0;
+    bottom: 0;
+    width: 173px;
+    height: 138px;
+}
+
+.my-acc-right__item:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    background: url('../assets/account/02-01.svg');
+    left: 0;
+    bottom: -29px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.my-acc-right__item:nth-child(2)::after {
+    position: absolute;
+    content: "";
+    background: url('../assets/account/02-02.svg');
+    right: -147px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.my-acc-right__item:nth-child(3)::before {
+    position: absolute;
+    content: "";
+    background: url('../assets/account/03-01.svg');
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.my-acc-right__item:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    background: url('../assets/account/03-02.svg');
+    left: 79.3%;
+    top: 33px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.my-acc-right__item:nth-child(4)::before,
+.my-acc-right__item:nth-child(5)::before {
+    position: absolute;
+    content: "";
+    background: url('../assets/account/04.svg');
+    left: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.my-acc-right__item:nth-child(6)::before {
+    position: absolute;
+    content: "";
+    right: 322px;
+    top: 90px;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    opacity: .3;
+    border-radius: 50%;
+}
+
+.my-acc-right__item:nth-child(6)::after {
+    position: absolute;
+    content: "";
+    left: 299px;
+    bottom: 62px;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    opacity: .3;
+    border-radius: 50%;
+}
+
+.my-acc-right-item__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-acc-right-item__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);
+}
+
+.my-acc-right-item__discount {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-acc-right-item__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.my-acc-right-item__days {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.my-acc-right-item__btn {
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    border-radius: 8px;
+    width: 130px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(20, 20, 20, 1);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.my-acc-right__item.more {
+    display: flex;
+    justify-content: center;
+}
+
+.my-acc-right__more {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-acc-right-more__btn {
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    border-radius: 8px;
+    width: 130px;
+    height: 36px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(20, 20, 20, 1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.account-plans__items {
+    display: flex;
+    gap: 30px;
+}
+
+.account-plans__item {
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 20px;
+    width: 370px;
+}
+
+.account-plans__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+}
+
+.account-plans__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.account-plans-text__time {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.account-plans-text__time p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+.account-plans-text__time p span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.account-plans-text__time div span.circle {
+    margin-right: 10px;
+}
+
+.account-plans-text__time div {
+    display: flex;
+    gap: 10px;
+}
+
+.account-plans-text__time.blue div.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(75.19deg, #20D6CB 0%, #7AE5DF 100%);
+}
+
+.account-plans-text__time.green div.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(75.19deg, #20D691 0%, #7AE5B5 100%);
+}
+
+.account-plans-text__time.yellow div.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(75.19deg, #D6C420 0%, #E5DA7A 100%);
+}
+
+.account-plans__bottom {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-plans-bottom__text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: white;
+}
+
+.account-plans-bottom__text p span {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.account-plans__btn {
+    border-radius: 8px;
+    width: 310px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    margin: 0px 30px 30px 30px;
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    color: rgba(20, 20, 20, 1);
+    cursor: pointer;
+}
+
+.account-plans__btn.current {
+    background: rgba(15, 15, 15, 1);
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+}
+
+.account-footer {
+    background: rgba(20, 20, 20, 1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.account-footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-footer__text {}
+
+.account-footer-desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.account-footer-desc span {
+    background: linear-gradient(84.59deg, #20D691 59.14%, #7AE5B5 63.42%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.account-footer-support {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.account-footer-support a {
+    color: white;
+}
+
+.account-footer__btn {
+    background: linear-gradient(84.59deg, #20D691 4.33%, #7AE5B5 95.67%);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: rgba(20, 20, 20, 1);
+    padding: 13px 0;
+    width: 310px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

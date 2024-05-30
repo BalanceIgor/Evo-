@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips</title>
+    <link rel="stylesheet" href="./style/globals.css">
+    <link rel="stylesheet" href="./style/trips.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/header.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <main class="page">
+            <aside class="aside">
+                <div class="aside-content">
+                    <div class="aside-top">
+                        <a href="./index.html" class="aside__logo">
+                            <img src="./assets/logo.svg" alt="Logotype">
+                        </a>
+                    </div>
+                    <ul class="aside-menu">
+                        <li class="aside-menu__item">
+                            <a href="./index.html">
+                                <img src="./assets/sidebar/menu/01.svg" alt="Icon">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./stations.html">
+                                <img src="./assets/sidebar/menu/02.svg" alt="Icon">
+                                Stations
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="" class="active">
+                                <img src="./assets/sidebar/menu/active/03.svg" alt="Icon">
+                                My Trips
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./account.html">
+                                <img src="./assets/sidebar/menu/04.svg" alt="Icon">
+                                Account
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="">
+                                <img src="./assets/sidebar/menu/05.svg" alt="Icon">
+                                Subscription plan
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="aside-cars">
+                        <div class="aside-cars__title">My Cars <img src="./assets/sidebar/add.svg" alt="Add Car Icon">
+                        </div>
+                        <div class="aside-cars__items">
+                            <div class="aside-cars__item">
+                                <div class="aside-cars-item__top">
+                                    <img src="./assets/sidebar/cars/01.svg" alt="Image Cars" class="aside-cars__img">
+                                    <div class="aside-cars__text">
+                                        <div class="aside-cars-text__name">Tesla</div>
+                                        <div class="aside-cars-text__model">Model X</div>
+                                    </div>
+                                </div>
+                                <div class="aside-cars-item__bottom">
+                                    <div class="aside-cars-bottom__battery">
+                                        Battery
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="aside-cars-bottom__range">
+                                        Range
+                                        <span>120 miles</span>
+                                    </div>
+                                    <img src="./assets/sidebar/cars/more.svg" alt="More Icon">
+                                </div>
+                            </div>
+                            <div class="aside-cars__item">
+                                <div class="aside-cars-item__top">
+                                    <img src="./assets/sidebar/cars/02.svg" alt="Image Cars" class="aside-cars__img">
+                                    <div class="aside-cars__text">
+                                        <div class="aside-cars-text__name">Nissan</div>
+                                        <div class="aside-cars-text__model">Leaf</div>
+                                    </div>
+                                </div>
+                                <div class="aside-cars-item__bottom">
+                                    <div class="aside-cars-bottom__battery low">
+                                        Battery
+                                        <span>18%</span>
+                                    </div>
+                                    <div class="aside-cars-bottom__range">
+                                        Range
+                                        <span>45 miles</span>
+                                    </div>
+                                    <img src="./assets/sidebar/cars/more.svg" alt="More Icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-board">
+                        <div class="aside-board__content">
+                            <div class="aside-board__title">Sell Your Energy</div>
+                            <div class="aside-board__desc">Earn up to $250/week</div>
+                            <button class="aside-board__btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="dashboard">
+                <div class="dashboard__header">
+                    <div class="header__left">
+                        <div class="header__crumbs">Pages / My Trips</div>
+                        <div class="header__name-page">
+                            My Trips
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-right__content">
+                            <div class="header-right__search-wrap">
+                                <div class="input-container">
+                                    <img src="./assets/header/Search.svg" alt="" class="search-icon">
+                                    <input type="text" class="header-search__input" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="header-right__icons">
+                                <img src="./assets/header/01.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/02.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/03.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/avatar.svg" alt="" class="header-right__icon avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="trips-content">
+                        <div class="trips-left">
+                            <div class="trips-left__title">
+                                Plan a route
+                            </div>
+                            <div class="trips__fon">
+                                <div class="trips-fon__left">
+                                    <div class="trips-fon-left__location">
+                                        Your Location
+                                        <img src="./assets/trips/location.svg" alt="">
+                                    </div>
+                                    <div class="trips-fon-left__location-end">
+                                        Milk Street
+                                        <img src="./assets/trips/map.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="trips-fon__right">
+                                    <button class="trips-fon-right__btn">
+                                        Get Directions
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- <img src="./assets/trips/01.svg" alt=""> -->
+                        </div>
+                        <div class="trips-right">
+                            <div class="trips-right__title">
+                                <p>Nathan Hill <span>started from</span> Portland St.</p>
+                                <p class="grey">6:12 PM, 11 Aug, 23</p>
+                            </div>
+                            <div class="trips-right__items">
+                                <div class="trips-right__item">
+                                    <div class="trips-item__title">
+                                        <p>Tesla Station <span>1780 N Beale Rd, Marysville</span></p>
+                                        <p class="grey">11:05 AM, 29 Aug, 2023</p>
+                                    </div>
+                                    <div class="trips-item__info-content">
+                                        <div class="trips-item__info">
+                                            <div class="trips-item-info__text">
+                                                Charging received
+                                                <p>27%</p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Energy delivered
+                                                <p>27 <span>kWh</span></p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Equivalent in km
+                                                <p>63 <span>km</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="trips-item__info">
+                                            <div class="trips-item-info__text">
+                                                Charging time
+                                                <p>37 <span>min</span></p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Amount
+                                                <p>$6.34</p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Method
+                                                <p><img src="./assets/trips/master-card.svg" alt="">*8745</p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/trips/image-trip.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="trips-center">
+                                    <img src="./assets/trips/more-trip.svg" alt="">
+                                    <p>Expand <span>1 more</span> stops from this time period</p>
+                                </div>
+                                <div class="trips-right__item two">
+                                    <div class="trips-item__title">
+                                        <p>Tesla Station <span>1780 N Beale Rd, Marysville</span></p>
+                                        <p>11:05 AM, 29 Aug, 2023</p>
+                                    </div>
+                                    <div class="trips-item__info-content">
+                                        <div class="trips-item__info">
+                                            <div class="trips-item-info__text">
+                                                Charging received
+                                                <p>27%</p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Energy delivered
+                                                <p>27 <span>kWh</span></p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Equivalent in km
+                                                <p>63 <span>km</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="trips-item__info">
+                                            <div class="trips-item-info__text">
+                                                Charging time
+                                                <p>37 <span>min</span></p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Amount
+                                                <p>$6.34</p>
+                                            </div>
+                                            <div class="trips-item-info__text">
+                                                Method
+                                                <p><img src="./assets/trips/master-card.svg" alt="">*8745</p>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/trips/image-trip.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="trips-right__title-end">
+                                    <p>Nathan Hill <span>finished on</span> Milk St.</p>
+                                    <span>6:23 PM, 12 Aug, 23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-footer">
+                        <div class="account-footer__content">
+                            <div class="account-footer__text">
+                                <div class="account-footer-desc">
+                                    Charge only once a month and want to prepay? Try the
+                                    prepaid plan to add a <span>$4.99</span> charging credit to your account each month.
+                                </div>
+                                <div class="account-footer-support">
+                                    Support:
+                                    <a href="mailto:evhubhelp@gmail.com">evhubhelp@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="account-footer__right">
+                                <button class="account-footer__btn">
+                                    Try
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

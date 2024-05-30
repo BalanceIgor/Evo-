@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style/globals.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/header.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <main class="page">
+            <aside class="aside">
+                <div class="aside-content">
+                    <div class="aside-top">
+                        <a href="./index.html" class="aside__logo">
+                            <img src="./assets/logo.svg" alt="Logotype">
+                        </a>
+                    </div>
+                    <ul class="aside-menu">
+                        <li class="aside-menu__item">
+                            <a href="" class="active">
+                                <img src="./assets/sidebar/menu/active/01.svg" alt="Icon">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./stations.html">
+                                <img src="./assets/sidebar/menu/02.svg" alt="Icon">
+                                Stations
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./trips.html">
+                                <img src="./assets/sidebar/menu/03.svg" alt="Icon">
+                                My Trips
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./account.html">
+                                <img src="./assets/sidebar/menu/04.svg" alt="Icon">
+                                Account
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="">
+                                <img src="./assets/sidebar/menu/05.svg" alt="Icon">
+                                Subscription plan
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="aside-cars">
+                        <div class="aside-cars__title">My Cars <img src="./assets/sidebar/add.svg" alt="Add Car Icon">
+                        </div>
+                        <div class="aside-cars__items">
+                            <div class="aside-cars__item">
+                                <div class="aside-cars-item__top">
+                                    <img src="./assets/sidebar/cars/01.svg" alt="Image Cars" class="aside-cars__img">
+                                    <div class="aside-cars__text">
+                                        <div class="aside-cars-text__name">Tesla</div>
+                                        <div class="aside-cars-text__model">Model X</div>
+                                    </div>
+                                </div>
+                                <div class="aside-cars-item__bottom">
+                                    <div class="aside-cars-bottom__battery">
+                                        Battery
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="aside-cars-bottom__range">
+                                        Range
+                                        <span>120 miles</span>
+                                    </div>
+                                    <img src="./assets/sidebar/cars/more.svg" alt="More Icon">
+                                </div>
+                            </div>
+                            <div class="aside-cars__item">
+                                <div class="aside-cars-item__top">
+                                    <img src="./assets/sidebar/cars/02.svg" alt="Image Cars" class="aside-cars__img">
+                                    <div class="aside-cars__text">
+                                        <div class="aside-cars-text__name">Nissan</div>
+                                        <div class="aside-cars-text__model">Leaf</div>
+                                    </div>
+                                </div>
+                                <div class="aside-cars-item__bottom">
+                                    <div class="aside-cars-bottom__battery low">
+                                        Battery
+                                        <span>18%</span>
+                                    </div>
+                                    <div class="aside-cars-bottom__range">
+                                        Range
+                                        <span>45 miles</span>
+                                    </div>
+                                    <img src="./assets/sidebar/cars/more.svg" alt="More Icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-board">
+                        <div class="aside-board__content">
+                            <div class="aside-board__title">Sell Your Energy</div>
+                            <div class="aside-board__desc">Earn up to $250/week</div>
+                            <button class="aside-board__btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="dashboard">
+                <div class="dashboard__header">
+                    <div class="header__left">
+                        <div class="header__crumbs">Pages / Dashboard</div>
+                        <div class="header__name-page">
+                            Dashboard
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-right__content">
+                            <div class="header-right__search-wrap">
+                                <div class="input-container">
+                                    <img src="./assets/header/Search.svg" alt="" class="search-icon">
+                                    <input type="text" class="header-search__input" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="header-right__icons">
+                                <img src="./assets/header/01.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/02.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/03.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/avatar.svg" alt="" class="header-right__icon avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-left">
+                        <div class="dashboard-left__item">
+                            <div class="item-ev__top">
+                                <div class="item-ev__title">
+                                    EV cars
+                                </div>
+                                <div class="item-ev__right">
+                                    <button class="item-ev__btn" data-car="nissan" id="nissan-car">Nissan Leaf</button>
+                                    <button class="item-ev__btn active" data-car="tesla">Tesla X</button>
+                                    <img src="./assets/ad.svg" alt="Add Icon">
+                                </div>
+                            </div>
+                            <div class="item-ev__center">
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__time ev-info-text">
+                                        Time
+                                    </div>
+                                    <div class="item-ev__info" id="car-time">
+                                        5:21 <span>h</span>
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__battery ev-info-text">
+                                        Battery
+                                    </div>
+                                    <div class="item-ev__info green" id="car-battery">
+                                        80 <span>%</span>
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__power ev-info-text">
+                                        Power reserve
+                                    </div>
+                                    <div class="item-ev__info" id="car-power-reserve">
+                                        428 <span>km</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-ev__bottom charging">
+                                <div class="item-ev-bottom__title">
+                                    <img src="./assets/Union.svg" alt="" id="union-green" class="union-img">
+                                    <img src="./assets/Union-red.svg" alt="" id="union-red" class="union-img-red">
+                                </div>
+                                <div class="item-ev__charging green" id="charging-load">
+                                    <div class="item-ev-charging__text" id="car-remaining-time">
+                                        3:31 <span>h</span>
+                                        <p class="item-ev-charging__sub">Remaining</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dashboard-left__item">
+                            <div class="item-ev__top">
+                                <div class="item-ev__title">
+                                    Gas Savings
+                                </div>
+                                <button class="item-ev__btn">
+                                    Year <img src="./assets/list.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="item-ev__center">
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__time ev-info-text">
+                                        Saved money
+                                    </div>
+                                    <div class="item-ev__info">
+                                        <span>$</span> 1,716
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__battery ev-info-text">
+                                        Using private
+                                    </div>
+                                    <div class="item-ev__info">
+                                        <span>$</span> 259
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__power ev-info-text">
+                                        m³, not burned
+                                    </div>
+                                    <div class="item-ev__info">
+                                        39 <span>O₂</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-ev__bottom">
+                                <div class="item-gas__wrap">
+                                    <img src="./assets/gas/green.svg" alt="">
+                                    <div class="item-gas__text">
+                                        <img src="./assets/gas/01.svg" alt="">
+                                        Total spent
+                                    </div>
+                                </div>
+                                <div class="item-gas__wrap">
+                                    <img src="./assets/gas/grey.svg" alt="">
+                                    <div class="item-gas__text">
+                                        <img src="./assets/gas/02.svg" alt="">
+                                        Gas equal.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-left__item">
+                            <div class="item-ev__top">
+                                <div class="item-ev__title">
+                                    Quick Trip Planer
+                                </div>
+                                <img src="./assets/ad.svg" alt="">
+                            </div>
+                            <div class="item-planer__center">
+                                <div class="item-planer__left">
+                                    <div class="item-planer__btn-navigation">
+                                        Tesla Model X
+                                        <img src="./assets/planer/01.svg" alt="">
+                                    </div>
+                                    <div class="item-planer__btn-navigation">
+                                        Your Location
+                                        <img src="./assets/planer/02.svg" alt="">
+                                    </div>
+                                    <div class="item-planer__btn-navigation">
+                                        Home
+                                        <img src="./assets/planer/03.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-planer__right">
+                                    <div class="item-planer-right__top">
+                                        <div class="item-planer__text">
+                                            <div class="item-planer-text__top">
+                                                Total Range
+                                                <p><span>25</span> miles</p>
+                                            </div>
+                                            <div class="item-planer-text__bottom">
+                                                You’re all set. Drive safely!
+                                            </div>
+                                        </div>
+                                        <div class="item-planer__load"></div>
+                                    </div>
+                                    <div class="item-planer__btn">
+                                        Get Directions
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-right">
+                        <div class="dashboard-right__item">
+                            <div class="dashboard-right-item__title">
+                                Charge statistics
+                                <button class="dashboard-right-item__title-btn">
+                                    Month <img src="./assets/list.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="item-ev__center">
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__time ev-info-text">
+                                        Total spent
+                                    </div>
+                                    <div class="item-ev__info">
+                                        <span>$</span> 87
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__battery ev-info-text">
+                                        Total charged
+                                    </div>
+                                    <div class="item-ev__info">
+                                        324 <span>kWh</span>
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__power ev-info-text">
+                                        Total time
+                                    </div>
+                                    <div class="item-ev__info">
+                                        52 <span>hr</span>
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__power ev-info-text">
+                                        Visited stations
+                                    </div>
+                                    <div class="item-ev__info">
+                                        43
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__power ev-info-text">
+                                        Parking time
+                                    </div>
+                                    <div class="item-ev__info">
+                                        11 <span>hr</span>
+                                    </div>
+                                </div>
+                                <div class="item-ev-wrap">
+                                    <div class="item-ev__power ev-info-text">
+                                        Total time
+                                    </div>
+                                    <div class="item-ev__info">
+                                        43 <span>hr</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/charge.svg" alt="" class="charge-image">
+                            <div class="dashboard-charge-item__bottom">
+                                <div class="dashboard-charge__items">
+                                    <div class="dashboard-charge__item">
+                                        <img src="./assets/charge/01.svg" alt="">
+                                        EV Hub - <span>31%</span>
+                                    </div>
+                                    <div class="dashboard-charge__item">
+                                        <img src="./assets/charge/02.svg" alt="">
+                                        Work - <span>29%</span>
+                                    </div>
+                                    <div class="dashboard-charge__item">
+                                        <img src="./assets/charge/03.svg" alt="">
+                                        Home - <span>17%</span>
+                                    </div>
+                                    <div class="dashboard-charge__item">
+                                        <img src="./assets/charge/04.svg" alt="">
+                                        Sell back - <span>13%</span>
+                                    </div>
+                                    <div class="dashboard-charge__item">
+                                        <img src="./assets/charge/05.svg" alt="">
+                                        Other - <span>10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-right__item">
+                            <div class="dashboard-right-item__title stations">
+                                Stations list
+                                <div class="dashboard-right-item__buttons">
+                                    <button class="dashboard-stations-item__title-btn active">
+                                        Favorite
+                                    </button>
+                                    <button class="dashboard-stations-item__title-btn">
+                                        All
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="dashboard-stations__items">
+                                <div class="dashboard-stations__left">
+                                    <div class="dashboard-stations-left__image">
+                                        <div class="dashboard-stations-left__img">
+                                            <img src="./assets/stations/01.svg" alt="">
+                                        </div>
+                                        <div class="dashboard-stations-left__text">
+                                            <div class="dashboard-stations-left__top">
+                                                <div class="dashboard-stations-left__name">
+                                                    Tesla Station
+                                                </div>
+                                                <div class="dashboard-stations-left__street">
+                                                    1780 N Beale Rd, Marysville
+                                                </div>
+                                            </div>
+                                            <div class="dashboard-stations-left__bottom">
+                                                <div class="dashboard-stations-left__ports">
+                                                    Ports Available
+                                                    <span>10</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-stations__right">
+                                        <div class="dashboard-stations-left__checkboxes">
+                                            <label class="dashboard-stations-left__label">
+                                                <p class="stations-label__name">Tesla <span>(AC/DC)</span></p>
+                                                <p class="stations-label__info">100 <span>k W</span></p>
+                                                <input type="radio" class="dashboard-stations-left__radio">
+                                                <span></span>
+                                            </label>
+                                            <label class="dashboard-stations-left__label">
+                                                <p class="stations-label__name">Nissan <span>(DC)</span></p>
+                                                <p class="stations-label__info">100 <span>k W</span></p>
+                                                <input type="radio" class="dashboard-stations-left__radio">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="dashboard-stations-left__information">
+                                            <p>
+                                                Parking Fee
+                                                <span>$0.1</span>
+                                            </p>
+                                            <p>
+                                                Per kwh
+                                                <span>$0.5</span>
+                                            </p>
+                                        </div>
+                                        <div class="dashboard-stations-left__information">
+                                            <p>
+                                                Arrive
+                                                <span>Today 09:15 <img src="./assets/planer/01.svg" alt=""></span>
+                                            </p>
+                                            <p>
+                                                Depart
+                                                <span>Today 10:15 <img src="./assets/planer/01.svg" alt=""></span>
+                                            </p>
+                                        </div>
+                                        <div class="dashboard-stations-left__buttons">
+                                            <button class="dashboard-stations-btn__book">
+                                                Book
+                                            </button>
+                                            <button class="dashboard-stations-btn__support">
+                                                Support
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-stations__left">
+                                    <div class="dashboard-stations-left__image">
+                                        <div class="dashboard-stations-left__img olsun">
+                                            <img src="./assets/stations/02.svg" alt="">
+                                        </div>
+                                        <div class="dashboard-stations-left__text">
+                                            <div class="dashboard-stations-left__top">
+                                                <div class="dashboard-stations-left__name">
+                                                    Olsun Station
+                                                </div>
+                                                <div class="dashboard-stations-left__street">
+                                                    11931 Giusti Rd, Herald
+                                                </div>
+                                            </div>
+                                            <div class="dashboard-stations-left__bottom">
+                                                <div class="dashboard-stations-left__ports">
+                                                    Ports Available
+                                                    <span>7</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-stations__right">
+                                        <div class="dashboard-stations-left__checkboxes">
+                                            <label class="dashboard-stations-left__label">
+                                                <p class="stations-label__name">Tesla <span>(AC/DC)</span></p>
+                                                <p class="stations-label__info">100 <span>k W</span></p>
+                                                <input type="radio" class="dashboard-stations-left__radio">
+                                                <span></span>
+                                            </label>
+                                            <label class="dashboard-stations-left__label">
+                                                <p class="stations-label__name">Nissan <span>(DC)</span></p>
+                                                <p class="stations-label__info">100 <span>k W</span></p>
+                                                <input type="radio" class="dashboard-stations-left__radio">
+                                                <span></span>
+                                            </label>
+                                        </div>
+                                        <div class="dashboard-stations-left__information">
+                                            <p>
+                                                Parking Fee
+                                                <span>$0.2</span>
+                                            </p>
+                                            <p>
+                                                Per kwh
+                                                <span>$0.6</span>
+                                            </p>
+                                        </div>
+                                        <div class="dashboard-stations-left__information">
+                                            <p>
+                                                Arrive
+                                                <span>Today 09:15 <img src="./assets/planer/01.svg" alt=""></span>
+                                            </p>
+                                            <p>
+                                                Depart
+                                                <span>Today 10:15 <img src="./assets/planer/01.svg" alt=""></span>
+                                            </p>
+                                        </div>
+                                        <div class="dashboard-stations-left__buttons">
+                                            <button class="dashboard-stations-btn__book">
+                                                Book
+                                            </button>
+                                            <button class="dashboard-stations-btn__support">
+                                                Support
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

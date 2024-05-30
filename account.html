@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./style/globals.css">
+    <link rel="stylesheet" href="./style/account.css">
+    <link rel="stylesheet" href="./style/sidebar.css">
+    <link rel="stylesheet" href="./style/header.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+        </header>
+        <main class="page">
+            <aside class="aside">
+                <div class="aside-content">
+                    <div class="aside-top">
+                        <a href="./index.html" class="aside__logo">
+                            <img src="./assets/logo.svg" alt="Logotype">
+                        </a>
+                    </div>
+                    <ul class="aside-menu">
+                        <li class="aside-menu__item">
+                            <a href="./index.html">
+                                <img src="./assets/sidebar/menu/01.svg" alt="Icon">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./stations.html">
+                                <img src="./assets/sidebar/menu/02.svg" alt="Icon">
+                                Stations
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="./trips.html">
+                                <img src="./assets/sidebar/menu/03.svg" alt="Icon">
+                                My Trips
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="" class="active">
+                                <img src="./assets/sidebar/menu/active/04.svg" alt="Icon">
+                                Account
+                            </a>
+                        </li>
+                        <li class="aside-menu__item">
+                            <a href="">
+                                <img src="./assets/sidebar/menu/05.svg" alt="Icon">
+                                Subscription plan
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="aside-cars">
+                        <div class="aside-cars__title">My Cars <img src="./assets/sidebar/add.svg" alt="Add Car Icon">
+                        </div>
+                        <div class="aside-cars__items">
+                            <div class="aside-cars__item">
+                                <div class="aside-cars-item__top">
+                                    <img src="./assets/sidebar/cars/01.svg" alt="Image Cars" class="aside-cars__img">
+                                    <div class="aside-cars__text">
+                                        <div class="aside-cars-text__name">Tesla</div>
+                                        <div class="aside-cars-text__model">Model X</div>
+                                    </div>
+                                </div>
+                                <div class="aside-cars-item__bottom">
+                                    <div class="aside-cars-bottom__battery">
+                                        Battery
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="aside-cars-bottom__range">
+                                        Range
+                                        <span>120 miles</span>
+                                    </div>
+                                    <img src="./assets/sidebar/cars/more.svg" alt="More Icon">
+                                </div>
+                            </div>
+                            <div class="aside-cars__item">
+                                <div class="aside-cars-item__top">
+                                    <img src="./assets/sidebar/cars/02.svg" alt="Image Cars" class="aside-cars__img">
+                                    <div class="aside-cars__text">
+                                        <div class="aside-cars-text__name">Nissan</div>
+                                        <div class="aside-cars-text__model">Leaf</div>
+                                    </div>
+                                </div>
+                                <div class="aside-cars-item__bottom">
+                                    <div class="aside-cars-bottom__battery low">
+                                        Battery
+                                        <span>18%</span>
+                                    </div>
+                                    <div class="aside-cars-bottom__range">
+                                        Range
+                                        <span>45 miles</span>
+                                    </div>
+                                    <img src="./assets/sidebar/cars/more.svg" alt="More Icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-board">
+                        <div class="aside-board__content">
+                            <div class="aside-board__title">Sell Your Energy</div>
+                            <div class="aside-board__desc">Earn up to $250/week</div>
+                            <button class="aside-board__btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section class="dashboard">
+                <div class="dashboard__header">
+                    <div class="header__left">
+                        <div class="header__crumbs">Pages / Account</div>
+                        <div class="header__name-page">
+                            Account
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-right__content">
+                            <div class="header-right__search-wrap">
+                                <div class="input-container">
+                                    <img src="./assets/header/Search.svg" alt="" class="search-icon">
+                                    <input type="text" class="header-search__input" placeholder="Search">
+                                </div>
+                            </div>
+                            <div class="header-right__icons">
+                                <img src="./assets/header/01.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/02.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/03.svg" alt="" class="header-right__icon">
+                                <img src="./assets/header/avatar.svg" alt="" class="header-right__icon avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="account__my-acc">
+                        <div class="my-acc__info">
+                            <div class="my-acc-info__title">
+                                My Account
+                                <img src="./assets/account/change.svg" alt="">
+                            </div>
+                            <div class="my-acc-info__content">
+                                <div class="my-acc-info__left">
+                                    <div class="my-acc-info-left__item">
+                                        Name
+                                        <span>Nathan Hill</span>
+                                    </div>
+                                    <div class="my-acc-info-left__item">
+                                        Location
+                                        <span>New York</span>
+                                    </div>
+                                    <div class="my-acc-info-left__item">
+                                        Date of Birth
+                                        <span>05.01.1993</span>
+                                    </div>
+                                </div>
+                                <div class="my-acc-info__right">
+                                    <img src="./assets/account/avatar.svg" alt="">
+                                    <button class="my-acc-info__btn">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-acc-right__items">
+                            <div class="my-acc-right__item">
+                                <div class="my-acc-right-item__text">
+                                    <p class="my-acc-right-item__name">Cyber Monday</p>
+                                    <p class="my-acc-right-item__discount">50% OFF</p>
+                                </div>
+                                <div class="my-acc-right-item__btns">
+                                    <p class="my-acc-right-item__days">
+                                        1 day left
+                                    </p>
+                                    <button class="my-acc-right-item__btn">
+                                        TRY NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="my-acc-right__item">
+                                <div class="my-acc-right-item__text">
+                                    <p class="my-acc-right-item__name">Green Week</p>
+                                    <p class="my-acc-right-item__discount">25% OFF</p>
+                                </div>
+                                <div class="my-acc-right-item__btns">
+                                    <p class="my-acc-right-item__days">
+                                        7 day left
+                                    </p>
+                                    <button class="my-acc-right-item__btn">
+                                        TRY NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="my-acc-right__item">
+                                <div class="my-acc-right-item__text">
+                                    <p class="my-acc-right-item__name">For Tesla</p>
+                                    <p class="my-acc-right-item__discount">10% OFF</p>
+                                </div>
+                                <div class="my-acc-right-item__btns">
+                                    <p class="my-acc-right-item__days">
+                                        7 day left
+                                    </p>
+                                    <button class="my-acc-right-item__btn">
+                                        TRY NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="my-acc-right__item">
+                                <div class="my-acc-right-item__text">
+                                    <p class="my-acc-right-item__name">For Nissan</p>
+                                    <p class="my-acc-right-item__discount">10% OFF</p>
+                                </div>
+                                <div class="my-acc-right-item__btns">
+                                    <p class="my-acc-right-item__days">
+                                        1 day left
+                                    </p>
+                                    <button class="my-acc-right-item__btn">
+                                        TRY NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="my-acc-right__item">
+                                <div class="my-acc-right-item__text">
+                                    <p class="my-acc-right-item__name">Green Month</p>
+                                    <p class="my-acc-right-item__discount">10% OFF</p>
+                                </div>
+                                <div class="my-acc-right-item__btns">
+                                    <p class="my-acc-right-item__days">
+                                        30 day left
+                                    </p>
+                                    <button class="my-acc-right-item__btn">
+                                        TRY NOW
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="my-acc-right__item more">
+                                <div class="my-acc-right__more">
+                                    Do you want to see more ?
+                                    <button class="my-acc-right-more__btn">More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-plans__items">
+                        <div class="account-plans__item">
+                            <div class="account-plans__title">
+                                Pay As You Go
+                            </div>
+                            <div class="account-plans__text">
+                                <div class="account-plans-text__time blue">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 AM - 8 AM
+                                    </div>
+                                    <p>$0.37 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time green">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        8 AM - 12 AM
+                                    </div>
+                                    <p>$0.47 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time yellow">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 PM - 6 PM
+                                    </div>
+                                    <p>$0.57 <span>per kWh</span></p>
+                                </div>
+                            </div>
+                            <div class="account-plans__bottom">
+                                <div class="account-plans-bottom__text">
+                                    Session Fee
+                                    <p>$0.99</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Reservation
+                                    <p>$2.99</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Rate
+                                    <p>$0.00 <span>per month</span></p>
+                                </div>
+                            </div>
+                            <button class="account-plans__btn current">
+                                Current Plan
+                            </button>
+                        </div>
+                        <div class="account-plans__item">
+                            <div class="account-plans__title">
+                                EV Hub Basic
+                            </div>
+                            <div class="account-plans__text">
+                                <div class="account-plans-text__time blue">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 AM - 8 AM
+                                    </div>
+                                    <p>$0.37 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time green">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        8 AM - 12 AM
+                                    </div>
+                                    <p>$0.47 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time yellow">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 PM - 6 PM
+                                    </div>
+                                    <p>$0.57 <span>per kWh</span></p>
+                                </div>
+                            </div>
+                            <div class="account-plans__bottom">
+                                <div class="account-plans-bottom__text">
+                                    Session Fee
+                                    <p>$0.99</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Reservation
+                                    <p>$2.99</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Rate
+                                    <p>$0.99 <span>per month</span></p>
+                                </div>
+                            </div>
+                            <button class="account-plans__btn">
+                                Current Plan
+                            </button>
+                        </div>
+                        <div class="account-plans__item">
+                            <div class="account-plans__title">
+                                EV Hub Plus
+                            </div>
+                            <div class="account-plans__text">
+                                <div class="account-plans-text__time blue">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 AM - 8 AM
+                                    </div>
+                                    <p>$0.31 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time green">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        8 AM - 12 AM
+                                    </div>
+                                    <p>$0.39 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time yellow">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 PM - 6 PM
+                                    </div>
+                                    <p>$0.47 <span>per kWh</span></p>
+                                </div>
+                            </div>
+                            <div class="account-plans__bottom">
+                                <div class="account-plans-bottom__text">
+                                    Session Fee
+                                    <p>$0.00</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Reservation
+                                    <p>$0.00</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Rate
+                                    <p>$6.99 <span>per month</span></p>
+                                </div>
+                            </div>
+                            <button class="account-plans__btn">
+                                Current Plan
+                            </button>
+                        </div>
+                        <div class="account-plans__item">
+                            <div class="account-plans__title">
+                                EV Hub Pro
+                            </div>
+                            <div class="account-plans__text">
+                                <div class="account-plans-text__time blue">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 AM - 8 AM
+                                    </div>
+                                    <p>$0.24 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time green">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        8 AM - 12 AM
+                                    </div>
+                                    <p>$0.32 <span>per kWh</span></p>
+                                </div>
+                                <div class="account-plans-text__time yellow">
+                                    <div class="">
+                                        <div class="circle"></div>
+                                        12 PM - 6 PM
+                                    </div>
+                                    <p>$0.38 <span>per kWh</span></p>
+                                </div>
+                            </div>
+                            <div class="account-plans__bottom">
+                                <div class="account-plans-bottom__text">
+                                    Session Fee
+                                    <p>$0.00</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Reservation
+                                    <p>$0.00</p>
+                                </div>
+                                <div class="account-plans-bottom__text">
+                                    Rate
+                                    <p>$12.99 <span>per month</span></p>
+                                </div>
+                            </div>
+                            <button class="account-plans__btn">
+                                Current Plan
+                            </button>
+                        </div>
+                    </div>
+                    <div class="account-footer">
+                        <div class="account-footer__content">
+                            <div class="account-footer__text">
+                                <div class="account-footer-desc">
+                                    Charge only once a month and want to prepay? Try the
+                                    prepaid plan to add a <span>$4.99</span> charging credit to your account each month.
+                                </div>
+                                <div class="account-footer-support">
+                                    Support:
+                                    <a href="mailto:evhubhelp@gmail.com">evhubhelp@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="account-footer__right">
+                                <button class="account-footer__btn">
+                                    Try
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
